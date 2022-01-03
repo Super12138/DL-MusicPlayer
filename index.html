@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>cplayer</title>
+<style>
+    #app{
+        padding-left: 40%;
+        padding-right: 40%;
+        padding-top: 10%;
+        
+    }
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script src="dist/cplayer.js"></script>
+<script>
+  let player = new cplayer({
+    element: document.getElementById('app'),
+    //大图模式
+    big: true,
+    //暗黑模式
+    //dark: true,
+    //showPlaylist: true,
+    playlist: [
+      {
+        src: 'mp3/Africa/Africa.mp3',
+        poster: 'mp3/cover.png',
+        name: 'Africa-稀树草原',
+        artist: 'Cheetah Mobile',
+        album: 'Dancing Line Music'
+      },
+      {
+        src: 'mp3/AllAboutUs/AllAboutUs.mp3',
+        poster: 'mp3/AllAboutUs/AAUcover.jpg',
+        name: 'All About Us（跳舞的线版）',
+        artist: 'Marta Małgorzata Olejarz',
+        //lyric: '歌词...',
+        //sublyric: '副歌词，一般为翻译...',
+        album: 'Dancing Line Music'
+      },
+      {
+        src: 'mp3/AllAboutUs/All About Us - MARTA.mp3',
+        poster: 'mp3/AllAboutUs/AAUcover.jpg',
+        name: 'All About Us（原版）',
+        artist: 'Marta Małgorzata Olejarz',
+        lyric: '[00:00.000] 作曲 : Marta Małgorzata Olejarz\n[00:21.00]High school, sunshine, it’s just like the perfect time\n[00:24.31]I feel your eyes on mine, you don’t even gotta tr\n[00:30.04]It‘s like the stars aligned, I’m wrapped up in your smile\n[00:32.77]My heart on the line, feel like living freestyle\n[00:37.84]We were falling\n[00:40.74]And we’re all in\n[00:44.13]Before we even knew where this was going\n[00:49.44]Yeah we were fools, running on love\n[00:52.32]Caffeine, summer breeze, we had it all\n[00:55.63]80s songs on the radio\n[00:58.00]Dancing like nobody’s home\n[01:00.30]We were going too fast, bound to crash\n[01:02.00]Didn’t think twice\n[01:06.00]It was all about us\n[01:08.63]It was all about us\n[01:12.85]All about your hand that you put on mine\n[01:15.77]All about you just making me shine\n[01:18.56]It’s us against the town\n[01:21.35]Cause all we know now\n[01:24.11]We were fools, running on love\n[01:27.03]Caffeine, summer breeze, we had it all\n[01:30.04]80s songs on the radio\n[01:32.83]Dancing like nobody’s home\n[01:35.60]We were going too fast, bound to crash\n[01:38.55]Didn’t think twice\n[01:40.57]It was all about us\n[01:43.38]It was all about us\n[01:46.84]We were just young, free and crazy\n[01:49.64]But the world is bigger than our hometown baby\n[01:52.99]Young, free and crazy we were\n[01:58.39]We were fools, running on love\n[02:01.50]Caffeine, summer breeze, we had it all\n[02:04.35]80s songs on the radio\n[02:07.15]Dancing like nobody’s home\n[02:09.98]We were going too fast, bound to crash\n[02:12.88]Didn’t think twice\n[02:15.74]It was all about us[02:17.83]It was all about us\n[02:21.23]It was all about us\n[02:23.64]It was all about us\n[02:26.18]It was all about us\n[02:29.13]It was all about us\n',
+        sublyric: '[00:00.000] 作曲 : Marta Małgorzata Olejarz\n[00:21.00]高中时光，阳光明媚，如同完美时刻\n[00:24.31]我感受到你炽热的目光，你不必过多试探我的心\n[00:30.04]如同星辰一线，我沉浸于你的微笑\n[00:32.77]你吊着我的心弦，让我感觉正过着自由式生活\n[00:37.84]我们在陨落\n[00:40.74]但我们都沉浸其中\n[00:44.13]在我们还没弄明白这是怎么一回事前\n[00:49.44]我们是为爱情奔波的傻瓜\n[00:52.32]我们拥有咖啡与夏日的风\n[00:55.63]伴着收音机里80年代的歌曲\n[00:58.00]沉浸自我地起舞，如同家中除了你我再无别人\n[01:00.30]我们发展的太快，一定会分崩离析\n[01:02.00]但我们没有多想\n[01:06.00]这是关于我们的一切\n[01:08.63]这就是关于我们的一切\n[01:12.85]关于你放在我身上的手\n[01:15.77]关于你让我闪耀\n[01:18.56]我们对抗着城镇\n[01:21.35]因为我们现在都明白\n[01:24.11]我们是为爱情奔波的傻瓜\n[01:27.03]我们拥有咖啡和夏日的风\n[01:30.04]伴着收音机里80年代的歌曲\n[01:32.83]沉浸自我地起舞，如同家中除了你我再无别人\n[01:35.60]我们发展的太快，一定会分崩离析\n[01:38.55]但我们没有多想\n[01:40.57]这是关于我们的一切\n[01:43.38]这就是关于我们的一切\n[01:46.84]我们年轻，张狂，放荡不羁\n[01:49.64]但亲爱的，世界远比我们的家乡大\n[01:52.99]我们年轻，张狂，放荡不羁\n[01:58.39]我们是为爱情奔波的傻瓜\n[02:01.50]我们拥有咖啡和夏日的风\n[02:04.35]伴着收音机里80年代的歌曲\n[02:07.15]沉浸自我地起舞，如同家中除了你我再无别人\n[02:09.98]我们发展的太快了，一定会分崩离析\n[02:12.88]但我们没有多想\n[02:15.74]这是关于我们的一切\n[02:17.83]这就是关于我们的一切\n[02:21.23]这就是关于我们的一切\n[02:23.64]这就是关于我们的一切\n[02:26.18]这就是关于我们的一切\n[02:29.13]这就是关于我们的一切',
+        album: 'Dancing Line Music'
+      },
+      {
+        src: 'mp3/Alley/Alley.mp3',
+        poster: 'mp3/cover.png',
+        name: 'Alley-青石巷',
+        artist: 'Cheetah Mobile',
+        album: 'Dancing Line Music'
+      },
+      {
+        src: 'mp3/Alone/Alone.mp3',
+        poster: 'mp3/Alone/Acover.jpg',
+        name: 'Alone - Alan Walker',
+        artist: 'Alan Olav Walker',
+        album: 'Dancing Line Music'
+      },
+      {
+        src: 'mp3/Autumn/Autumn.mp3',
+        poster: 'mp3/cover.png',
+        name: 'Autumn-秋天',
+        artist: 'Cheetah Mobile',
+        album: 'Dancing Line Music'
+      },
+      {
+        src: 'mp3/Basketball/Basketball.mp3',
+        poster: 'mp3/cover.png',
+        name: 'Basketball-篮球',
+        artist: 'Cheetah Mobile',
+        album: 'Dancing Line Music'
+      },
+    ]
+  })
+</script>
+</body>
+</html>
